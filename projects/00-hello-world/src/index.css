@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  background: #222;
+  font-family: system-ui;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.tw-followCard {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #eee;
+    background: #353535;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.tw-followCard-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+
+.tw-followCard-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.tw-followCard-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.tw-followCard-name {
+    font-weight: 700;
+}
+
+.tw-followCard-username {
+    font-weight: 400;
+    color: #aaa;
+}
+
+.tw-followCard-aside {
+    margin-left: 1.5rem;
+    align-content: center;
+    margin-right: 0.5rem;
+}
+
+.tw-followCard-button {
+    background: #fff;
+    width: 120px;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease background-color;
+    
+}
+.tw-followCard-button:hover {
+    background-color: #1da1f2;
+    color: #fff;
+}
+
+.tw-followCard-button.is-following {
+    background: #1da1f2;
+    color: #fff;
+}
+
+.tw-followCard-button.is-following:hover {
+    background-color: #ff000016;
+    border: 1px solid #ff0000;
+    color: #ff0000;
+}
+
+.tw-followCard-button .tw-followCard-button-label {
+    display: none;
+}
+
+.tw-followCard-button.is-following:hover .tw-followCard-button-label {
+    display: block;
+}
+
+.tw-followCard-button.is-following:hover .tw-followCard-button-text {
+    display: none;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
